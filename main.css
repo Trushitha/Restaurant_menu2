@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color:black;
+    background-image: url("images/bg2.webp");
+    background-size:cover;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    line-height: 22px;
+    color:white;
+  }
+  .main {
+    width: 1140px;
+    margin: 100px auto;
+  }
+  .search{
+    width: 50%;
+    margin: 50px auto;
+}
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+  .section-title {
+    text-align: center;
+    margin-bottom:10px;
+  }
+  .section-title h2 {
+    text-transform: capitalize;
+    font-size: 35px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+  }
+  .section-title h2:before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  } 
+  .menus 
+  {
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+  }
+  .menu-column {
+    width:33%;
+  }
+  .menu-column h4 {
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  .menu-column h4:before {
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    bottom: 0;
+  }
+  .single-menu {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .single-menu img {
+    border-radius: 50%;
+    max-width: 110px;
+    border: 1px dashed #ddd;
+    padding: 3px;
+    margin-right:11px;
+    transition: .3s;
+  }
+  .single-menu:hover img{
+      transform: rotate(360deg);
+  }
+  .single-menu .menu-content h5 {
+    font-size: 22px;
+    font-weight: 500;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+  .single-menu .menu-content h5 span {
+    padding-right: 3%;
+    padding-top: 3%;
+    color:yellow;
+    float: right;
+    font-weight: 800;
+    font-style: italic;
+  }
+  .img 
+  {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation-name: example;
+    animation-duration:10s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count:2;
+    animation-direction:normal;
+  }
+  
+  @keyframes example {
+    0%   {left:0px; top:0px;}
+    25%  {left:200px; top:0px;}
+    65%  {left:600px;top: 0px;}
+    85%  {right: 300px;top: 0px;}
+    100% {left:0px; top:0px;}
+  }
+
+  
